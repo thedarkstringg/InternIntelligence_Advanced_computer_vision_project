@@ -1,6 +1,6 @@
-			       THE DESCRIPTION OF THE PROJECT:
+			       		THE DESCRIPTION OF THE PROJECT:
 
-			      Advanced Computer Vision Project
+			      		Advanced Computer Vision Project
 
 Task : Develop a computer vision application for object detection or image segmentation.
 
