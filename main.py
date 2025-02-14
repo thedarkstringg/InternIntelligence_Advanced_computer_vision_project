@@ -6,20 +6,16 @@ import io
 
 api = FastAPI()
 
-#Loading my YoloV8 Train Model
 model = YOLO('yolov8n.pt')
 
 @api.post("/predict/")
 async def predict(file: UploadFile = File(...)):
-    # Read image
     image = Image.open(io.BytesIO(await file.read()))
     
-    #performing inference
     results = model(image)
 
     results[0].show() 
     
-    #extracting predictions
     predictions = []
     for r in results:
         for box in r.boxes:
